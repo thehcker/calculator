@@ -12,7 +12,10 @@ export default class TemperatureInput extends Component {
   render() {
     return (
       <div>
-        <input value={this.props.temperature} onChange={this.handleChange} />
+        <label>
+          Temperature in {this.props.scale}: <br />
+          <input value={this.props.temperature} onChange={this.handleChange} />
+        </label>
       </div>
     );
   }
